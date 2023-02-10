@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- 
+    [상대경로]
+    현재폴더를 기준으로 원하는 파일의 위치를 찾아감
+    상위폴더이동(../)
+    현대폴더(./) 
+-->
+
+<!-- 2일차 > block-inline.html -->
+<div class="box1">
+#block속성(부모 크기 전체가 가로크기로 할당, 한줄 내리기)
+    div - box형태의 콘텐츠
+    h2  - 타이틀
+    p   - 문서 단락 
+
+#inline속성(해당 태그의 내용만큼 가로크기 할당)
+    b   - bold(문자 굵기)
+    a   - 문서이동 (링크)
+    img - 이미지출력
+</div>
+
+
+<div class="ex1">
+    <h2>
+        Precise Created
+        Only For You
+    </h2>
+    <p>
+        If <span>dolor</span>
+        cassettes on the...            
+    </p>
+    <a href="#">Get Started</a>
+</div>
+
+<style>
+    div,p,h2{box-sizing: border-box;}
+    *{box-sizing: border-box;}
+
+    .ex1{ 
+        
+        width:400px; 
+        border:1px solid black;
+        padding:40px;
+    }
+    .ex1 > h2{margin:0;}
+    .ex1 > p{margin:50px 0;}
+    .ex1 > p > span{ color:red;  }
+    .ex1 > a{
+        background-color: yellow;
+        border:1px solid black;
+
+        width:50%;
+        padding:0px;
+        margin:0px;
+        display: block;
+    }
+</style>
+
+<!-- 
+콘텐츠 상태 확인!!!
+ㄴ 사이즈 => width + padding + border
+ㄴ 인라인속성 => 사이즈, 여백(스타일 제약)
+             => 속성을 변경해서 사용
+ㄴ h2, p     => margin(바깥여백) 기본값
+
+ㄴ 문자크기는 브라우저 글꼴과 크기를 기본값을 함
+ㄴ 줄간격은 문자크기보다 수치값을 크게 갖고 있음 -->
+
+
+
+
+
+
+
+<div class="ex2">
+    <p><img src="이미지URL" alt=""></p>
+    <div>
+        <b>
+            Precise Created
+            Only For You
+        </b>
+        <p>
+            If you are looking at blank...
+        </p>
+        <a href="#">Get Started</a>
+    </div>
+</div>
+
+<style>
+    .ex2{}
+    .ex2 >p{}
+    .ex2 >p > img{}
+    .ex2 > div{}
+    .ex2 > div > b{}
+    .ex2 > div > p{}
+    .ex2 > div > a{}
+</style>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+Inline Tag냐 block Tag 구분
+- Inline 특성 한줄로 해당 내용의 크기만큼 할당
+- Block 특성 부모의 영역을 할당 받아서 해당 크기 할당
+
+원하는 이미지나 폰트 선택후 URL 복사 Import
+[ 문서의 크기를 줄이기 위해서 더이상 Image로 추가하지 않는다. ]
+
+https://fonts.google.com/ - 폰트를 CSS로 가져와서 적용
+https://fonts.google.com/icons - 아이콘을 CSS로 가져와서 적용
+
