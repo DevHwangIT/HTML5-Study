@@ -55,8 +55,49 @@
 .mp > ul{}
 .mp > ul > li{}
 .mp > ul > li > p{}
-.mp > ul > li:nth-of-type(1) p{}
-.mp > ul > li:nth-of-type(2) p{}
-.mp > ul > li:nth-of-type(3) p{}
-.mp > ul > li:nth-of-type(4) p{}
-.mp > ul > li:nth-of-type(5) p{}
+.mp > ul > li:nth-of-type(1) p{
+    margin:100px 0px 100px 100px;
+}
+.mp > ul > li:nth-of-type(2) p{
+    margin:100px 0px 100px
+}
+.mp > ul > li:nth-of-type(3) p{
+    margin:100px 200px;
+}
+.mp > ul > li:nth-of-type(4) p{
+    margin:100px
+}
+.mp > ul > li:nth-of-type(5) p{
+    width:400px;
+    margin:100px auto;
+}
+.mp > ul > li:last-of-type p{
+    margin-left:50px;
+}
+
+
+/* background */
+body{ height:5000px; }
+.bg{
+    white-space: pre-line;   
+}
+.bg>p:first-of-type{
+    padding:60px;
+    height:500px;
+    background-image: url('img/03.jpg'); 
+    background-repeat:  no-repeat;
+    /* repeat, no-repeat , repeat-x, */
+    background-position: left bottom;
+    /* 
+        문자표기 => 가로(left,right,center) / 세로(top,center,bottom)
+        숫자   표기 => px, %,...... 
+    */
+    border:10px solid #f00;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg>p:nth-of-type(2){
+    padding:200px;
+    background:#f00 url('img/06.jpg') center / contain no-repeat scroll;
+}

@@ -1,0 +1,59 @@
+
+.ex1{
+    width:400px;
+    margin:100px auto;
+    padding:40px;
+    border:1px solid #000;
+}
+.ex1 > h2{
+    font-size:32px;
+    margin:0;
+}
+.ex1 > p{
+    font-size:16px;
+    line-height:180%;
+    color:#555;
+}
+.ex1 > a{
+    background-color: #f2ff00ff;
+    padding:10px 20px;
+    border: 1px solid #000;
+    color:#000;
+    text-decoration: none;
+    display: inline-block;
+    /* 스타일제약(X), 인라인속성은 유지 */
+}
+
+
+/* ex2 */
+.ex2{
+    width:400px;
+    margin:100px auto;
+    padding:40px;
+    border:1px solid #000
+}
+.ex2 > p{margin:0;}
+.ex2 > p > img{
+    width:100%; 
+    vertical-align: middle;
+    /* top,middle,bottom */
+}
+
+.ex2 > div{}
+.ex2 > div > h2{
+    font-size:32px; 
+    margin:20px 0 0;
+}
+.ex2 > div > p{
+    font-size:16px;
+    line-height: 1.8;
+    color:#555;
+}
+.ex2 > div > a{
+    background-color: #f2ff00ff;
+    padding:10px 20px;
+    border: 1px solid #000;
+    color:#000;
+    text-decoration: none;
+    display: inline-block;
+}
