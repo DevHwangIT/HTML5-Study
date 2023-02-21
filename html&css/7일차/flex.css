@@ -1,0 +1,51 @@
+div{
+    width:50%;
+    border: 1px solid #f00;
+    margin:100px auto;
+}
+p{
+    height:200px;
+    background-color: #ddd;
+    border:1px dashed #000;
+}
+.box1{
+    display: flex;
+    justify-content:space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+    /* justify-content:right; */
+}
+.box1 > p{
+    width:20%; height:200px;
+}
+
+.box2{
+    display: flex;
+    align-items: flex-end;
+    /* * flex-start, center, flex-end */
+    height:400px;
+}
+.box2 > p{width:30%;}
+
+
+/* =======================ex======================= */
+.ex1{
+    width:50%; height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ex1 b{ font-size:40px }
+
+/* ex2 */
+.ex2{
+    width:50%; height:400px;
+    display: flex;
+}
+.ex2 > p{}
+.ex2 > p:nth-of-type(1){ width:70%; }
+.ex2 > p:nth-of-type(2){ width:20%;}
+
+.ex2 > p:nth-of-type(2) > span{}

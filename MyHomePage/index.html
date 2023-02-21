@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="src/bootstrap-4.4.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="src/style/MyStyle.css">
-
-        <script src="js/Login.js"></script>
+    <link rel="stylesheet" href="style/LoginStyle.css">
 
         <!DOCTYPE html>
         <html lang="en">
@@ -12,52 +10,56 @@
                             <title>Document</title>
                         </head>
                         <body>
-                            <p class="AnimationTest">p 태그같은 자식한테 적용되는 얘들이 같이 움직인다.<p>
-                            <div class="MyStyle_BackGround">
-                                <div class="p-3 mb-2 bg-primary text-white" style="--bs-border-opacity: 40px;">
-                                    <h1 class="MyStyle_Title">
-                                        유저 관리 도구<br>
-                                            <h5>관리자 로그인 화면</h5>
-                                        </h1>
-                                        <div class="MyStyle_InputArea">
-                                            <!-- ID Input Field 처리 -->
-                                            ID :
-                                            <div class="input-group mb-3">
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    placeholder="아이디를 입력해주세요"
-                                                    aria-label="아이디를 입력해주세요"
-                                                    aria-describedby="basic-addon2"></div>
-
-                                                <!-- Password Input Field 처리 -->
-                                                PW :
+                            <!--<p class="AnimationTest">p 태그같은 자식한테 적용되는 얘들이 같이 움직인다.<p></p>-->
+                                <div class="MyStyle_BackGround">
+                                    <div class="p-3 mb-2 bg-primary text-white" style="--bs-border-opacity: 40px;">
+                                        <h1 class="MyStyle_Title">
+                                            유저 관리 도구<br>
+                                                <h5>관리자 로그인 화면</h5>
+                                            </h1>
+                                            <div class="MyStyle_InputArea">
+                                                <!-- ID Input Field 처리 -->
+                                                ID :
                                                 <div class="input-group mb-3">
                                                     <input
+                                                        id="id_Input_Field"
                                                         type="text"
                                                         class="form-control"
-                                                        placeholder="비밀번호를 입력해주세요"
-                                                        aria-label="비밀번호를 입력해주세요"
+                                                        placeholder="아이디를 입력해주세요"
+                                                        aria-label="아이디를 입력해주세요"
                                                         aria-describedby="basic-addon2"></div>
-                                                </div>
 
-                                                <!-- 버튼 처리 -->
-                                                <div class="col-md-12 text-center">
-                                                    <button
-                                                        id="InputArea_Log-In_button"
-                                                        type="button"
-                                                        class="btn btn-success btn-lg">
-                                                        Log-In</button>
-                                                    <button
-                                                        id="InputArea_Cancel_button"
-                                                        type="button"
-                                                        class="btn btn-secondary btn-lg">
-                                                        Cancel</button>
-                                                </div>
+                                                    <!-- Password Input Field 처리 -->
+                                                    PW :
+                                                    <div class="input-group mb-3">
+                                                        <input
+                                                            id="pw_Input_Field"
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="비밀번호를 입력해주세요"
+                                                            aria-label="비밀번호를 입력해주세요"
+                                                            aria-describedby="basic-addon2"></div>
+                                                    </div>
 
-                                                <dv class="MyStyle_InputArea_Clock" id='nowTime'>현재 시간 표시</div>
+                                                    <!-- 버튼 처리 -->
+                                                    <div class="col-md-12 text-center">
+                                                        <button
+                                                            id="InputArea_Log-In_button"
+                                                            type="button"
+                                                            class="btn btn-success btn-lg">
+                                                            Log-In</button>
+                                                        <button
+                                                            id="InputArea_Cancel_button"
+                                                            type="button"
+                                                            class="btn btn-secondary btn-lg">
+                                                            Cancel</button>
+                                                    </div>
+
+                                                    <dv class="MyStyle_InputArea_Clock" id='nowTime'>현재 시간 표시</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div >
-                                </body>
-                            </html>
+                                        </div >
+                                    </body>
+                                </html>
+
+                                <script src="js/Login.js"></script>

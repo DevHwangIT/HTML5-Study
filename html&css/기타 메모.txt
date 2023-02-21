@@ -8,3 +8,13 @@ Inline Tag냐 block Tag 구분
 https://fonts.google.com/ - 폰트를 CSS로 가져와서 적용
 https://fonts.google.com/icons - 아이콘을 CSS로 가져와서 적용
 
+게임 개발자와 비교하자면 이런느낌일까?
+
+
+CVC Container View Container ?
+
+html,css,javascript -> 그냥 고전적인 방법으로 코드 구현하는것.
+
+bootstrap -> Win Api 같은느낌아니다 음... 굳이 비교하자면 MFC?....... 뭔가 UI적으로 다 만들어 놓은 느낌
+
+react, vue.js -> Unreal, Unity, Cry 등등의 여러가지 엔진..? 아니다 엔진보다는 DirectX나 OpenGL로 만들어놓은 가벼운 프레임워크라고 봐야하나?
