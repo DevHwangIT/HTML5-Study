@@ -28,6 +28,77 @@ p{
 }
 .box2 > p{width:30%;}
 
+/* box3 */
+.box3{ 
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+ }
+ .box3 > p{
+    flex-shrink: 0;
+    width:100%;
+    margin:0 0 0 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+ } 
+ .box3:hover > p{
+    margin-left:-30%;
+ }
+
+
+ .box4{
+    display:flex;
+    flex-direction: row-reverse;
+ }
+ .box4 > p{
+    margin:0;
+    flex-grow: 1;
+    transition: 1s;
+ }
+ .box4 > p:hover{
+    flex-grow: 10;
+ }
+
+.box5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box5 > p{ width: 50%;}
+.box5 > p:nth-of-type(1){order:4}
+.box5 > p:nth-of-type(2){order:3}
+.box5 > p:nth-of-type(3){order:2}
+.box5 > p:nth-of-type(4){order:1}
+
+
+
+
+.ex4{}
+.ex4 > h2{}
+.ex4 > ul{}
+.ex4 > ul > li{}
+
+.ex4 > ul > li > p{}
+.ex4 > ul > li > p > img{}
+
+.ex4 > ul > li > div{}
+.ex4 > ul > li > div > p{}
+.ex4 > ul > li > div > b{}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =======================ex======================= */
 .ex1{
@@ -41,11 +112,58 @@ p{
 
 /* ex2 */
 .ex2{
-    width:50%; height:400px;
+    width:50%; height:450px;
     display: flex;
+    justify-content: space-between;
 }
-.ex2 > p{}
+.ex2 > p{margin:0; height:100%;}
 .ex2 > p:nth-of-type(1){ width:70%; }
-.ex2 > p:nth-of-type(2){ width:20%;}
+.ex2 > p:nth-of-type(2){ 
+    width:20%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
 
-.ex2 > p:nth-of-type(2) > span{}
+.ex2 > p:nth-of-type(2) > span{
+    width:100%; height:20%;
+    background-color: #f00;
+}
+
+/* ex3 */
+*{box-sizing: border-box;}
+.ex3{
+    display: flex;
+    align-items: center;
+}
+.ex3 > div{ width: 50%; margin:0;}
+.ex3 > div > img{
+    width:100%; height:100%;
+    object-fit: cover;
+}
+
+
+
+.ex3 > div:nth-of-type(1){
+    height:400px; background-color: #ddd;
+}
+.ex3 > div:nth-of-type(2){
+    padding:5% 5%;
+}
+.ex3 > div:nth-of-type(2) > strong{}
+.ex3 > div:nth-of-type(2) > p{
+    background-color: transparent;
+    border:none;
+    height:auto;
+}
+.ex3 > div:nth-of-type(2) > a{
+    display: inline-block;
+    background-color: yellow;
+    padding:10px 30px;
+    border:1px solid #000;
+}
+
+a{ 
+    text-decoration: none; 
+    color:#333; 
+}
