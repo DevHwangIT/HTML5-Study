@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+body{margin:0;}
+h1,h2{margin:0}
+*{box-sizing: border-box;}
+a{ text-decoration: none; }
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 10%;
+}
+header > h1{}
+header > h1 > a{color:white;}
+header > nav{}
+header > nav > a{color:white; padding:0 20px}
+header > nav > a:hover{ color:yellow; }
+header > div{color:white}
+

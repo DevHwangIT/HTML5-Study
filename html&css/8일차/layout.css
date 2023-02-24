@@ -1,0 +1,12 @@
+/* layout.css */
+
+header,main,footer,aside,nav,section,article{
+    border:1px solid #000;
+    background-color: #ddd;
+    padding:60px;
+    margin:50px;
+    text-align: center;
+}
+nav,section,article{
+    background-color: rgb(255, 253, 163);
+}

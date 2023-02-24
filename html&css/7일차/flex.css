@@ -75,17 +75,46 @@ p{
 
 
 
-.ex4{}
-.ex4 > h2{}
-.ex4 > ul{}
-.ex4 > ul > li{}
+.ex4{
+    width:50%;
+    text-align: center;
+}
+.ex4 > h2{font-size:32px;}
+.ex4 > ul{
+    list-style-type: none; 
+    margin:0; padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ex4 > ul > li{width:30%}
 
 .ex4 > ul > li > p{}
-.ex4 > ul > li > p > img{}
+.ex4 > ul > li > p > img{
+    width:100%; height:100%; 
+    object-fit: cover;
+}
 
-.ex4 > ul > li > div{}
-.ex4 > ul > li > div > p{}
+.ex4 > ul > li > div{ 
+    width:100%; margin:0; border:none;
+}
+.ex4 > ul > li > div > p{
+    height:auto; background-color: transparent;
+    border:none;
+
+}
 .ex4 > ul > li > div > b{}
+
+
+
+.ex4 > ul > li > p{overflow: hidden;}
+.ex4 > ul > li > p > img{transition: 0.5s;}
+.ex4 > ul > li:hover > p > img{ 
+    transform: scale(1.5);
+}
+/* .ex4 > ul > li > p > img:hover{ 
+    width:150%;
+} */
 
 
 
