@@ -1,3 +1,33 @@
 @import url('./common.css');
 
 /* index.css */
+/* 
+    viewport height  => vh
+    viewport width => vw
+ */
+main{ position: relative; height:100vh; overflow: hidden;}
+.info{
+    background-color: rgba(80, 128, 38, 0.5);
+    position: absolute;
+    left:0; top:0;
+    height:100%;
+
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    padding:0 3%;
+}
+.info > h2{}
+.info > ul{}
+.info > ul > li{}
+.info > ul > li > b{margin-top:2rem}
+.info > ul > li > b::before{
+    content: '●';  /* 필수속성 */
+    font-size:.5rem;
+    position:relative; top:-3px;
+    padding-right:10px;
+}
+.info > ul > li > p{ white-space: pre-line;}
+
+.slide{height:100%;}
+.slide > img{width:100%; height:100%; object-fit: cover;}

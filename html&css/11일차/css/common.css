@@ -17,6 +17,6 @@ span,i,b,mark,strong{display: inline-block;}
 
 *{
     box-sizing: border-box;
-    color:#333;
+    color:#fff;
     font-size:1rem;
 }
