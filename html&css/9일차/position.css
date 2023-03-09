@@ -1,0 +1,73 @@
+
+.absolute{
+    position:absolute;
+    left:0; top:150px;
+    background-color: yellow;
+    border-radius: 30px;
+    padding:50px;
+    z-index: 3;
+}
+.absolute > div{white-space: pre-line;}
+
+
+.relative{
+    position:relative;
+    left:0; top:350px;
+    background-color: rgb(255, 152, 245);
+    border-radius: 30px;
+    padding:50px;
+    z-index: 2;
+}
+.relative > div{white-space: pre-line;}
+
+
+
+
+
+.relative-absolute{
+    position:relative;
+    left:0; top:400px;
+    background-color: rgb(125, 255, 186);
+    border-radius: 30px;
+    padding:50px;
+    z-index: 2;
+}
+.relative-absolute > div{white-space: pre-line;}
+.relative-absolute > a{
+    position:absolute;
+    right:0; top:0;
+}
+
+
+
+
+
+.fixed{
+    position:fixed;
+    right:0; top:0px;
+    background-color: rgb(166, 176, 255);
+    border-radius: 30px;
+    padding:50px;
+    z-index: 2;
+}
+.fixed > div{white-space: pre-line;}
+
+
+
+
+.sticky{
+    margin-top:500px;
+}
+.sticky > div{
+    display: flex;
+    align-items: flex-start;
+}
+.sticky p:nth-child(1){
+    position: sticky;
+    top:100px;
+    background-color: #f00;
+}
+.sticky p:nth-child(2){
+    background-color: aquamarine;
+    height:2000px;
+}

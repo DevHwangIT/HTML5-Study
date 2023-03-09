@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>정보입력</legend>
+        <form action="http://naver.com" method="post">
+            <ul>
+                <li>
+                    <label>아이디</label>
+                    <input type="text" name="id" placeholder="아이디는 15자로 입력!!!" required>
+                </li>
+                <li>
+                    <label>패스워드</label>
+                    <input type="password" name="pw">
+                </li>
+                <li>
+                    <label>연락처</label>
+                    <input type="tel" name="t" required>
+                </li>
+                <li>
+                    <label>이메일</label>
+                    <input type="email" name="mail" required>
+                </li>
+                <li>
+                    <label>검색</label>
+                    <input type="search" name="search">
+                </li>
+                <li>
+                    <label>날짜</label>
+                    <input type="date" name="date" value="2023-03-07" min="2023-03-01" max="2023-05-01">
+                </li>
+                <li>
+                    <label>색상</label>
+                    <input type="color" name="color">
+                </li>
+                <li>
+                    <label>파일첨부</label>
+                    <input type="file" name="uploadFile">
+                </li>
+                <li>
+                    <label>성별</label>
+                    남<input type="radio" name="g" checked>
+                    여<input type="radio" name="g">
+                </li>
+                <li>
+                    <label>동의</label>
+                    <input type="checkbox" name="ter">
+                </li>
+                <li>
+                    <label>지역선택</label>
+                    <select>
+                        <optgroup label="수도권">
+                            <option>서울</option>
+                            <option selected>경기</option>
+                            <option>인천</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <label>내용</label>
+                    <textarea cols="50" rows="5"></textarea>
+                </li>
+                <li>
+                    <label> datalist </label>
+                    <input list="data">
+                    <datalist id="data">
+                        <option value="서울"></option>
+                        <option value="경기"></option>
+                        <option value="인천"></option>
+                    </datalist>
+
+                </li>
+                <li>
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </li>
+            </ul>
+        </form>
+    </fieldset>
+
+    <style>
+        li{padding:20px 0; border-bottom:1px solid #000;}
+        label{display: inline-block; width:100px;}
+        input{padding:5px;}
+    </style>
+
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./position.css">
+</head>
+<body>
+<!--     
+    position.html
+    position.css -->
+<article>
+    <h2>Position</h2>
+    <p>value : absolute, fixed, relative, sticky, static</p>
+
+    <article class="absolute">
+        <h3>Absolute(절대좌표)</h3>
+        <div>
+            -콘텐츠 위치 좌표(left,right,top,bottom)
+            -스크롤에 반응함
+            -다른콘텐츠와 겹칠수 있음
+            -사용예) 공지사항,이벤트,배너와 같은 곳에 사용
+        </div>
+    </article>
+
+    <article class="relative">
+        <h3>Relative(상대좌표)</h3>
+        <div>
+            -콘텐츠 위치 좌표(left,right,top,bottom)
+            -스크롤에 반응함
+            -위치가 달라지더라도 콘텐츠 영역이 남아 있음 
+            -콘텐츠를 겹치기 위해 사용하지 않음
+            -좌표값은 콘텐츠가 위치하고 있는 영역으로 설정됨(브라우저 X)
+        </div>
+    </article>
+
+    <article class="relative-absolute">
+        <h3>Relative-Absolute(상대좌표)</h3>
+        <div>
+           - 부모(relative), 자손(absolute)
+           - 부모의 좌표 영역에서 자손이 위치값을 가짐
+           - 사용예) 이미지위에 설명글...
+        </div>
+        <a href="#"> absolute </a>
+    </article>
+
+    <article class="fixed">
+        <h3>Fixed(고정좌표)</h3>
+        <div>
+          - absolute와 동일하나 스크롤에 영향을 받지않음
+          - 항상 고정될수 있는 콘텐츠(헤더,사이드메뉴..등)
+        </div>
+    </article>
+
+
+    <article class="sticky">
+        <h3>Sticky(상대&고정좌표)</h3>
+        <div>
+            <p> 사이드 메뉴 또는 콘텐츠 </p>
+            <p> 
+                sticky는 부모의 영역안에서 고정값을 갖음
+                그외 relative와 동일하게 작동됨
+            </p>          
+        </div>
+    </article>
+</article>
+
+
+<div style="height:3000px; background-color: #000;">skdjfksjdkfskdfskjf</div>
+
+
+
+
+
+
+
+</body>
+</html>

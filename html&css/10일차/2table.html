@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table.html -->
+    <table border="1" width="600" cellspacing="10" cellpadding="50">
+        <col width="100">
+        <col width="*">
+        <col width="200">
+        <caption>테이블 형식</caption>
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+        </tr>
+    </table>
+
+    <style>
+        table{
+            width:1000px; 
+            border-collapse: collapse;
+        }
+        table td,table th{
+            border:1px solid #f00;
+        }
+
+    </style>
+
+
+
+    <table class="tb-1">
+        <caption>테이블 영역 분리</caption>
+        <thead>
+            <tr>
+                <th>업체명</th>
+                <th>모델명</th>
+                <th>수량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">SK</th>
+                <td>아이폰</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>안드로이드</td>
+                <td>2000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">합계</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <style>
+        .tb-1{margin:100px auto;}
+        .tb-1 > caption{
+            font-size:2rem; 
+            text-align: left; 
+            padding:30px 0;
+        }
+        .tb-1 thead th{ background-color: #f00; color:#fff;}
+        .tb-1 tbody th{background-color: #ddd;}
+
+        .tb-1 th, .tb-1 td{
+            text-align: center;
+            padding:15px;
+        }
+
+    </style>
+
+
+    
+</body>
+</html>
